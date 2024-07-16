@@ -1,0 +1,183 @@
+#prime number program 
+a=int(input("entre:"))
+if a>1:
+    for i in range(2, a):
+        if a % i == 0:
+            print("not prime..")
+            break
+       
+    else:
+        print("prime...")
+
+else:
+    print("not prime..")
+
+----------------------------------
+----------------------------------------------------------------------------------
+#palindrome program
+a=int(input("entre number:"))
+result=0
+while a:
+    b=a%10
+    result=result*10+b
+    a=a//10
+    if result==a:
+        print("palindrome..")
+-----------------------------------------------------
+-----------------------------------------=======================
+#amrstrong number
+a=int(input("entre number:"))
+b=str(a)
+result=0
+for x in b:
+    result+=int(x)**len(b)
+    if result==a:
+        print("armstrong number..")
+----------------------------------------------------------
+=============================================================================
+#swapping of two numbers
+a=2
+b=5
+a,b=b,a
+print(a,b)
+--------------------------------------------
+===========================================
+pattern program
+
+for i in range(7):
+    for j in range(i):
+        print(j,end=" ")
+    print(" ")
+------------------------------
+==============================================================
+even or not program
+
+num=int(input("entre number:"))
+if num%2==0:
+    print("even.")
+else:
+    print("not even..")
+-----------------------------
+================================================
+Factorial of given number
+
+num=int(input("entre number:"))
+f=1
+if num<0:
+    print("factorial not found.")
+elif num==0:
+    print("factorial of 0 is 1")
+else:
+    for i in range(1,num+1):
+        f=f*i
+    print(f"factorial of {num} is:",+f)
+--------------------------------------------------------------------
+=========================================================
+Factorial using recursion
+def factorial(num):
+    result=0
+    if num==0:
+        return 1
+    elif num>=1:
+        return num*factorial(num-1)
+
+print(factorial(5))
+---------------------------------------------------------------------
+=====================================================+++++++++++++++++
+Reversal of a string
+
+stri="kumar raja sai"
+#stri=stri[::-1]
+#print(stri)
+stri=stri.split()
+stri=stri[::-1]
+stri="".join(stri)
+print(stri)
+
+----------------------------------------------------------
+====================================================================
+Fibonaci series
+
+num=int(input("entre number:"))
+first=1
+second=1
+print(first)
+print(second)
+while num:
+    nrxt=first+second
+    print(nrxt)
+    num=num-1
+    first=second
+    second=nrxt
+
+-----------------------------------------------------
+===============================================================================
+
+for i in range(1,6):
+    for j in range(i,6):
+        print(j, end=" ")
+    else:
+        for k in range(1,i):
+            print(k,end=" ")
+    print()
+op:-
+1 2 3 4 5 
+2 3 4 5 1 
+3 4 5 1 2 
+4 5 1 2 3 
+5 1 2 3 4 
+----------------------------------------
+===================================================
+
+
+def frequency(s):
+    res={}
+    for char in s:
+        if char in res:
+            res[char]+=1
+        else:
+            res[char]=1
+    print(res)
+st="python programing"
+rs=frequency(st)
+print(rs)
+ OUT PUT::
+{'p': 2, 'y': 1, 't': 1, 'h': 1, 'o': 2, 'n': 2, ' ': 1, 'r': 2, 'g': 2, 'a': 1, 'm': 1, 'i': 1}
+------------------------------------------------------------
+=========================================================================
+#perfect number program
+
+num=int(input("entre number:"))
+res=0
+for i in  range(1,num):
+    if num%i==0:
+        res+=i
+if num==res:
+    print("perfect number")
+else:
+    print("not perfect number")
+-------------------------------------------------------
+=============================================================
+
+def pnumber(num):
+    res=0
+    for i in range(1,num):
+        if num%i==0:
+            res+=i
+    if num==res:
+        print(num)
+for i in range(1,29):
+    pnumber(i)
+----------------------------------------------------------
+==========================================================================
+
+
+
+
+
+
+
+
+
+
+
